@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Vibe | Events | Mozilla iNDIA</title>
+	<title>Vibe | Events | Mozilla India</title>
 	<script src="/js/jquery.js"></script>
 	<script src="/js/fetchData.js"></script>
 </head>
@@ -14,7 +14,7 @@
     <nav id="nav-main" role="navigation">
         <span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
         <ul id="nav-main-menu">
-	    <li><input type="text" id="events_filter"/></li>
+	    <li><div id="events_filter">Filter Events</div></li>
             <li class="first"><a href="http://www.mozilla.org/about/">About</a></li>
             <li><a href="http://www.mozilla.org/mission/">Mission</a></li>
             <li><a href="http://blog.mozillaindia.org">Blog</a></li>

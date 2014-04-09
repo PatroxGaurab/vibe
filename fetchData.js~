@@ -111,7 +111,7 @@ https.get(repsUri, function(res) {
             
             }
         });
-	res.on('data', function(){
+	res.on('end', function(){
 				var fileData = fs.readFileSync("data");
 		var formattedEventData = jsl.format.formatJson(fileData.toString());
                 fs.writeFile("data2", formattedEventData);

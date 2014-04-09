@@ -29,8 +29,7 @@ $(document).ready(function(){
 			var string = "";
 			var months = new Array("JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC");
 			var events = data.objects;
-
-				for (var i=0;i<events.length;i++) {
+			for (var i=0;i<events.length;i++) {
 				var event = events[i];
 				date = new Date(event.start);
 				if(date.getMonth() == 4){
