@@ -106,16 +106,14 @@ https.get(repsUri, function(res) {
             
             }
             else{
-                fs.appendFile("data", eventData);
+                fs.appendFileSync("data", eventData);
+		var fileData = fs.readFileSync("data");
+		var formattedEventData = jsl.format.formatJson(fileData.toString());
+                fs.writeFile("data", formattedEventData);
                 console.log("false");
             
             }
         });
-	res.on('data', function(){
-				var fileData = fs.readFileSync("data");
-		var formattedEventData = jsl.format.formatJson(fileData.toString());
-                fs.writeFile("data2", formattedEventData);
-	});
         }).on('error', function(e) {
             console.error(e);
 });
